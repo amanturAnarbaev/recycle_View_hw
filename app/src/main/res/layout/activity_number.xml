@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumberActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/numberRecycle_xml"
+        tools:listitem="@layout/item_numbers"
+        android:layout_marginBottom="60dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/bt_exit"
+     android:text="@string/exit1"
+     android:textSize="24sp"
+     app:layout_constraintTop_toBottomOf="@id/numberRecycle_xml"
+     app:layout_constraintStart_toStartOf="@id/numberRecycle_xml"
+     app:layout_constraintEnd_toEndOf="@id/numberRecycle_xml"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
